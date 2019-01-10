@@ -1,0 +1,400 @@
+$font-first: "Montserrat";
+$font-secondary: "Unica One";
+
+$color-1: #2541B2;
+$color-2: #1768AC;
+$color-3: #06BEE1;
+$color-4: #ffffff;
+$color-5: #333333;
+$color-6: #f9fbfd;
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Padrões */
+.no-padding {
+    padding: 0;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pt-70 {
+    padding-top: 70px;
+}
+
+.pb-70 {
+    padding-bottom: 70px;
+}
+
+/* Titulos de Sessões */
+.title-section-1 {
+    font: {
+        family: $font-first;
+        weight: 700;
+        size: 2.5em;
+    }
+    text-transform: uppercase;
+    line-height: 1em;
+    color: $color-5;
+}
+
+.title-section-1 span {
+    color: $color-2;
+}
+
+@media (min-width: 768px) {
+    .title-section-1 span {
+        display: block;
+    }
+}
+
+.title-section-2  {
+    font: {
+        family: $font-first;
+        weight: 700;
+        size: 2.5em;
+    }
+    text-transform: uppercase;
+    line-height: 1em;
+    color: $color-4;
+}
+
+@media (min-width: 768px) {
+    .title-section-2 span {
+        display: block;
+    }
+}
+
+/* Textos Corpo */
+.text-body-1 {
+    font: {
+        family: $font-first;
+        weight: 400;
+        size: 1em;
+    }
+    color: $color-5;
+}
+
+/* Carousel Home */
+.carousel-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.overlay-banner {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -0.9;
+    background: linear-gradient(to top left, rgba(37, 65, 178, 0.80) 0%, rgba(6, 190, 225, 0.85) 100%);
+}
+
+.title-banner {
+    font: {
+        family: $font-first;
+        weight: 700;
+        size: 2.75em;
+    }
+    letter-spacing: -1.5px;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: $color-4;
+    width: 50%;
+}
+
+.subtitle-banner {
+    font: {
+        family: $font-first;
+        weight: 400;
+        size: 1.2em;
+    }
+    color: $color-4;
+    width: 50%;
+}
+
+@media (max-width: 767px) {
+    .title-banner {
+        width: 100%;
+    }
+
+    .subtitle-banner {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .title-banner {
+        width: 70%;
+    }
+
+    .subtitle-banner {
+        width: 70%;
+    }
+}
+
+.btn-banner {
+    font: {
+        family: $font-first;
+        weight: 600;
+        size: 1em;
+    }
+    text-transform: uppercase;
+    color: $color-4;
+    background-color: transparent;
+    border: 2px solid $color-4;
+    border-radius: 1.5em;
+    padding: 12px 20px;
+}
+
+.btn-banner:hover {
+    background-color: $color-4;
+    border: none;
+    text-decoration: none;
+    color: $color-2; 
+    transition: 0.3s;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+	width: 0.7em;
+	height: 0.7em;
+}
+
+.owl-banner .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.owl-banner .owl-dots .owl-dot.active span {
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
+}
+
+.owl-banner .owl-dots .owl-dot span {
+    background-color: transparent !important;
+    border: 1px solid #fff !important;
+}
+
+/* Nossa Missão */
+.video-thumb > img {
+    box-shadow: 0px 2px 20px rgba(153, 153, 153, 0.40);
+}
+
+.title-about {
+    padding-bottom: 30px;
+}
+
+.text-about {
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.btn-play-video {
+    background-color: transparent;
+    border: none;
+}
+
+.video-link {
+    font: {
+        family: $font-first;
+        weight: 600;
+        size: 1.2em;
+    }
+    color: $color-5;
+}
+
+.video-link:hover {
+    text-decoration: none;
+    color: $color-5;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .title-about {
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .title-about {
+        padding-left: 30px;
+    }
+
+    .text-about {
+        padding-left: 30px;
+    }
+
+    .video-link {
+        padding-left: 30px;
+    }
+} 
+
+.play-video-icon {
+    font: {
+        size: 1.3em;
+    }
+    color: $color-2;
+    padding-right: 10px;
+}
+
+.modal-video .modal-dialog {
+    max-width: 100%;
+    border: none;
+}
+
+.modal-video .modal-header {
+    border: none;
+    background-color: $color-5;
+}
+
+/* Serviços */
+.services {
+    background-color: $color-6;
+}
+
+.title-services {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.card-service {
+    width: 100%;
+    padding: 30px;
+    background-color: $color-4;
+    box-shadow: 0px 2px 20px rgba(153, 153, 153, 0.2);
+}
+
+@media (max-width: 991px) {
+    .card-service {
+        margin-top: 20px;
+    }
+}
+
+.card-service-area {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-service > i {
+    font: {
+        size: 3.5em;
+    }
+    color: $color-2;
+}
+
+.title-service > h4 {
+    font: {
+        family: $font-first;
+        weight: 700;
+        size: 2em;
+    }
+    text-align: center;
+    color: $color-5;
+    padding-top: 20px;
+}
+
+.btn-service {
+    font: {
+        family: $font-first;
+        size: 1em;
+        weight: 500;
+    }
+    text-transform: uppercase;
+    color: $color-2;
+    background-color: transparent;
+    border: 2px solid $color-2;
+    margin-top: 20px;
+}
+
+.btn-service:hover {
+    color: $color-4;
+    background-color: $color-2;
+    transition: 0.3s;
+}
+
+/* Contato */
+.contact {
+    background-image: url('../../assets/img/contact.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.title-contact {
+    text-align: center;
+}
+
+.input-contact {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $color-4;
+}
+
+.input-contact:focus {
+    font: {
+        family: $font-first;
+        weignt: 400;
+        size: 1em;
+    }
+    color: $color-4;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid $color-4;
+    box-shadow: none;
+}
+
+.input-contact::placeholder {
+    font: {
+        family: $font-first;
+        weignt: 300;
+        size: 1em;
+    }
+    color: $color-4;
+}
+
+.btn-contact {
+    font: {
+        family: $font-first;
+        weight: 600;
+        size: 1.1em;
+    }
+    color: $color-4;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid $color-4;
+    border-radius: 1.5em;
+    width: 100%;
+}
+
+.btn-contact:hover {
+    color: $color-2;
+    background-color: $color-4;
+    transition: 0.3s;
+}
