@@ -345,7 +345,12 @@ html, body {
 }
 
 .img-portfolio {
+    padding-top: 20px;
     height: 220px;
+}
+
+.img-portfolio:hover {
+    border-top: 5px solid $color-2;
 }
 
 .title-work {
