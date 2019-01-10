@@ -338,6 +338,59 @@ html, body {
     transition: 0.3s;
 }
 
+/* Portfólio */
+.bg-portfolio {
+    width: 100%;
+    height: 220px;
+}
+
+.img-portfolio {
+    height: 220px;
+}
+
+.title-work {
+    color: $color-2;
+}
+
+.title-work:hover {
+    text-decoration: none;
+    color: $color-2;
+}
+
+.title-work > h4 {
+    font: {
+        family: $font-first;
+        weight: 600;
+        size: 1.4em;
+    }
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.title-work > p {
+    font: {
+        family: $font-first;
+        weight: 400;
+        size: 1em;
+    }
+    text-align: justify;
+    color: $color-5;
+}
+
+.title-work > p:hover {
+    text-decoration: underline;
+}
+
+.owl-portfolio .owl-dots .owl-dot.active span {
+    background-color: $color-2 !important;
+    border: 1px solid $color-2 !important;
+}
+
+.owl-portfolio .owl-dots .owl-dot span {
+    background-color: transparent !important;
+    border: 1px solid $color-2 !important;
+}
+
 /* Contato */
 .contact {
     background-image: url('../../assets/img/contact.jpg');

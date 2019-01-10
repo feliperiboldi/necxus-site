@@ -320,6 +320,55 @@ html, body {
   transition: 0.3s;
 }
 
+/* Portfólio */
+.bg-portfolio {
+  width: 100%;
+  height: 220px;
+}
+
+.img-portfolio {
+  height: 220px;
+}
+
+.title-work {
+  color: #1768AC;
+}
+
+.title-work:hover {
+  text-decoration: none;
+  color: #1768AC;
+}
+
+.title-work > h4 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  text-align: justify;
+}
+
+.title-work > p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1em;
+  text-align: justify;
+  color: #333333;
+}
+
+.title-work > p:hover {
+  text-decoration: underline;
+}
+
+.owl-portfolio .owl-dots .owl-dot.active span {
+  background-color: #1768AC !important;
+  border: 1px solid #1768AC !important;
+}
+
+.owl-portfolio .owl-dots .owl-dot span {
+  background-color: transparent !important;
+  border: 1px solid #1768AC !important;
+}
+
 /* Contato */
 .contact {
   background-image: url("../../assets/img/contact.jpg");
