@@ -273,6 +273,10 @@ html, body {
   }
 }
 
+.card-service:hover {
+  border-top: 3px solid #1768AC;
+}
+
 .card-service-area {
   width: 100%;
   height: 100%;
@@ -288,18 +292,66 @@ html, body {
           align-items: center;
 }
 
+.icon-service-area {
+  width: 5.7em;
+  height: 5.7em;
+  border-radius: 50%;
+  background-color: #1768AC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .icon-service > i {
   font-size: 3.5em;
-  color: #1768AC;
+  color: #ffffff;
 }
 
 .title-service > h4 {
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.2em;
   text-align: center;
   color: #333333;
   padding-top: 20px;
+}
+
+.text-service {
+  opacity: 0;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+  visibility: hidden;
+  display: none;
+}
+
+.text-service > p {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 0.9em;
+  text-align: center;
+  color: #333333;
+}
+
+.card-service:hover .text-service {
+  opacity: 1;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+  visibility: visible;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .text-service {
+    opacity: 1;
+    display: block;
+    visibility: visible;
+  }
 }
 
 .btn-service {

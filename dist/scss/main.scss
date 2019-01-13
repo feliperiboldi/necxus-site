@@ -293,6 +293,10 @@ html, body {
     }
 }
 
+.card-service:hover {
+    border-top: 3px solid $color-2;
+}
+
 .card-service-area {
     width: 100%;
     height: 100%;
@@ -301,22 +305,64 @@ html, body {
     align-items: center;
 }
 
+.icon-service-area {
+    width: 5.7em;
+    height: 5.7em;
+    border-radius: 50%;
+    background-color: $color-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .icon-service > i {
     font: {
         size: 3.5em;
     }
-    color: $color-2;
+    color: $color-4;
 }
 
 .title-service > h4 {
     font: {
         family: $font-first;
         weight: 700;
-        size: 2em;
+        size: 1.2em;
     }
     text-align: center;
     color: $color-5;
     padding-top: 20px;
+}
+
+.text-service {
+    opacity: 0;
+	transition: ease all 0.5s;
+    visibility: hidden;
+    display: none;
+}
+
+.text-service > p {
+    font: {
+        family: $font-first;
+        weight: 300;
+        size: 0.9em;
+    }
+    text-align: center;
+    color: $color-5;
+}
+
+.card-service:hover .text-service {
+    opacity: 1;
+	transition: ease all 0.5s;
+    visibility: visible;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .text-service {
+        opacity: 1;
+        display: block;
+        visibility: visible;
+    }
 }
 
 .btn-service {
