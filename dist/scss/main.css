@@ -316,7 +316,7 @@ html, body {
 .title-service > h4 {
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.15em;
   text-align: center;
   color: #333333;
   padding-top: 20px;
@@ -502,5 +502,56 @@ html, body {
   background-color: #ffffff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+footer {
+  background-color: #f9fbfd;
+}
+
+.items-footer,
+.items-footer-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .items-footer,
+  .items-footer-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.link-footer {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.link-footer:hover {
+  font-weight: 500;
+  color: #333333;
+}
+
+.text-footer {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 0.8em;
+  color: #333333;
 }
 /*# sourceMappingURL=main.css.map */
