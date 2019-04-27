@@ -89,6 +89,33 @@ html, body {
     color: $color-5;
 }
 
+/* Menu Principal */
+.menu-link-white {
+    font: {
+        family: $font-first;
+        weight: 400;
+        size: 1em;
+    }
+    text-transform: uppercase;
+    color: $color-6;
+    margin-right: 10px;
+}
+
+.menu-link-white:hover {
+    border-bottom: 1px solid $color-6;
+    transition: 0.3s;
+}
+
+.menu-link-black {
+    color: $color-5;
+}
+
+.menu-on-scroll {
+    background-color: $color-6;
+    color: $color-5 !important;
+    box-shadow: 0px 2px 20px rgba(153, 153, 153, 0.4); 
+}
+
 /* Carousel Home */
 .carousel-image {
     background-size: cover;
@@ -170,7 +197,7 @@ html, body {
     background-color: $color-4;
     border: none;
     text-decoration: none;
-    color: $color-2; 
+    color: $color-2;
     transition: 0.3s;
 }
 
@@ -248,7 +275,7 @@ html, body {
     .video-link {
         padding-left: 30px;
     }
-} 
+}
 
 .play-video-icon {
     font: {
@@ -507,7 +534,7 @@ footer {
     background-color: $color-6;
 }
 
-.items-footer, 
+.items-footer,
 .items-footer-2 {
     display: flex;
     justify-content: space-between;
@@ -516,7 +543,7 @@ footer {
 }
 
 @media (max-width: 767px) {
-    .items-footer, 
+    .items-footer,
     .items-footer-2 {
         flex-direction: column;
         align-items: center;
@@ -546,5 +573,5 @@ footer {
         weight: 300;
         size: 0.8em;
     }
-    color: $color-5; 
+    color: $color-5;
 }

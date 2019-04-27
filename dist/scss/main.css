@@ -74,6 +74,33 @@ html, body {
   color: #333333;
 }
 
+/* Menu Principal */
+.menu-link-white {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #f9fbfd;
+  margin-right: 10px;
+}
+
+.menu-link-white:hover {
+  border-bottom: 1px solid #f9fbfd;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu-link-black {
+  color: #333333;
+}
+
+.menu-on-scroll {
+  background-color: #f9fbfd;
+  color: #333333 !important;
+  -webkit-box-shadow: 0px 2px 20px rgba(153, 153, 153, 0.4);
+          box-shadow: 0px 2px 20px rgba(153, 153, 153, 0.4);
+}
+
 /* Carousel Home */
 .carousel-image {
   background-size: cover;
